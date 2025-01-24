@@ -1,4 +1,4 @@
-# CPH-LeetCode-Extension
+# CPH VS Code Extension
 
 The **CPH LeetCode Extension** is a Visual Studio Code plugin that simplifies the process of solving LeetCode problems. It helps you directly fetch test cases from problem pages, run your solutions locally, and supports multiple programming languages like Python and C++.  
 
