@@ -14,13 +14,13 @@
   "contributes": {
     "commands": [
       {
-        "command": "cph.fetchTestCases",
-        "title": "CPH: Fetch Test Cases",
+        "command": "cphlc.fetchTestCases",
+        "title": "Fetch Test Cases",
         "category": "CPH"
       },
       {
-        "command": "cph.runTestCases",
-        "title": "CPH: Run Test Cases",
+        "command": "cphlc.runTestCases",
+        "title": "Run Test Cases",
         "category": "CPH"
       }
     ]
