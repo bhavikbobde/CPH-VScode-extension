@@ -1,53 +1,59 @@
-# cph README
+# Competitive Programing Helper README
 
-This is the README for your extension "cph". After writing up a brief description, we recommend including the following sections.
+The CPH LeetCode Extension for Visual Studio Code enhances the process of solving LeetCode problems by allowing you to automatically retrieve test cases directly from problem URLs in multiple languages, such as Python and C++. This extension makes it easier to store, test, and compare outputs with your solution.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Features
 
-For example if there is an image subfolder under your extension project workspace:
+1. Problem URL Fetching
+Retrieve test cases from a LeetCode problem URL.
+Parse problem descriptions to extract both input and expected output test cases.
+Support for problems containing multiple test cases.
+Save test cases in a structured format for local testing.
 
-\!\[feature X\]\(images/feature-x.png\)
+2. Test Case Storage
+Test cases are stored in a format compatible with the Competitive Programming Helper (CPH) extension.
+Input files are saved as input_1.txt, input_2.txt, and so on.
+Corresponding output files are named output_1.txt, output_2.txt, etc.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+3. Code Execution
+Write code in your language of choice.
+Run your code against the retrieved test cases.
+Compare actual outputs with expected results for each test case.
 
-## Requirements
+4. Multi-Language Support
+Currently supports popular programming languages, including Python and C++.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Commands
 
-## Extension Settings
+Fetch Test Cases (cphlc.fetchTestCases)
+Prompts the user for a LeetCode problem URL.
+Automatically fetches and saves test cases locally for testing.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Run Test Cases (cphlc.runTestCases)
+Compiles and runs your code against the stored test cases.
+Displays the results for each test case, including whether the output matches the expected result.
+ 
+## Usage
 
-For example:
+ 1.	Open your coding workspace in Visual Studio Code.
+ 2.	Use the Fetch Test Cases command to retrieve and store test cases from a LeetCode problem URL.
+ 3.	Write your solution in the editor, ensuring your code uses standard input and output. For data structures like arrays, input format will begin with the size of the array followed by the array elements (applicable for higher-dimensional arrays as well).
+ 4.	Use the Run Test Cases command to run your code against the stored test cases and view the results.
 
-This extension contributes the following settings:
+## Installation
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+ 1.	Clone this repository.
+ 2.	Open the cloned repository in VS Code.
+ 3.	Run npm install to install the necessary dependencies.
+ 4.	Press F5 to launch the extension in a new VS Code window for testing.
 
-## Known Issues
+## Dependencies
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
+Puppeteer for web scraping.
+Child Process for executing commands.
+Node.js File System for file handling.
 
 ## Following extension guidelines
 
