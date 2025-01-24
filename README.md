@@ -4,8 +4,6 @@ The CPH LeetCode Extension for Visual Studio Code enhances the process of solvin
 
 ## Features
 
-Features
-
 1. Problem URL Fetching
 Retrieve test cases from a LeetCode problem URL.
 Parse problem descriptions to extract both input and expected output test cases.
@@ -17,12 +15,12 @@ Test cases are stored in a format compatible with the Competitive Programming He
 Input files are saved as input_1.txt, input_2.txt, and so on.
 Corresponding output files are named output_1.txt, output_2.txt, etc.
 
-3. Code Execution
+4. Code Execution
 Write code in your language of choice.
 Run your code against the retrieved test cases.
 Compare actual outputs with expected results for each test case.
 
-4. Multi-Language Support
+6. Multi-Language Support
 Currently supports popular programming languages, including Python and C++.
 
 ## Commands
