@@ -1,59 +1,67 @@
 # CPH-LeetCode-Extension
 
-The **CPH LeetCode Extension** is a VS Code extension designed to enhance your competitive programming experience on LeetCode. It allows you to fetch and store test cases directly from LeetCode problem URLs, run tests locally, and supports popular programming languages like Python and C++.
+The **CPH LeetCode Extension** is a Visual Studio Code plugin that simplifies the process of solving LeetCode problems. It helps you directly fetch test cases from problem pages, run your solutions locally, and supports multiple programming languages like Python and C++.  
 
-## Features
+## Key Features  
 
-### 1. **Fetch Test Cases from LeetCode**
-- Retrieve test cases directly from LeetCode problem URLs.
-- Automatically parse the problem descriptions to extract input and expected output test cases.
-- Handle problems with multiple test cases seamlessly.
-- Store the fetched test cases in an organized format for local testing.
+### 1. **Retrieve Test Cases from LeetCode**  
+- Input a LeetCode problem URL to pull test cases effortlessly.  
+- Automatically extract the problem's input and expected outputs from its description.  
+- Supports problems with multiple test cases.  
+- Organizes test cases locally for easy testing.  
 
-### 2. **Test Case Storage**
-- Test cases are saved in a format compatible with the **Competitive Programming Helper (CPH)** extension.
-- Input files are saved as `input_1.txt`, `input_2.txt`, etc.
-- Output files are saved as `output_1.txt`, `output_2.txt`, etc.
+### 2. **Organized Test Case Storage**  
+- Saves test cases in a structured, consistent format for local use.  
+- Input files are named as `input_1.txt`, `input_2.txt`, etc.  
+- Corresponding outputs are stored as `output_1.txt`, `output_2.txt`, etc.  
 
-### 3. **Execute Code**
-- Write your code in your preferred programming language (e.g., Python, C++).
-- Run your code against the fetched test cases.
-- The extension compares the actual outputs with the expected outputs for each test case.
+### 3. **Run and Test Your Code**  
+- Write your solution in the language of your choice.  
+- Run your solution against the stored test cases.  
+- Compares the program output with the expected output to identify discrepancies.  
 
-### 4. **Multi-Language Support**
-- Supports multiple programming languages, including **Python** and **C++**.
+### 4. **Supports Multiple Languages**  
+- Works seamlessly with popular programming languages such as **Python** and **C++**.  
 
-## Usage
+---
 
-### Available Commands
+## Getting Started  
 
-- **Fetch Test Cases (`cph.fetchTestCases`)**
-  - Prompts you to enter a LeetCode problem URL.
-  - Fetches and stores the test cases locally in the extension.
+### Commands  
 
-- **Run Test Cases (`cph.runTestCases`)**
-  - Compiles and executes the code against the stored test cases.
-  - Displays the results for each test case.
+1. **Fetch Test Cases (`cph.fetchTestCases`)**  
+   - Enter the URL of a LeetCode problem to retrieve and save test cases locally.  
 
-### How to Use
+2. **Run Test Cases (`cph.runTestCases`)**  
+   - Execute your solution and test it against the stored inputs and outputs.  
 
-1. Open your coding workspace in VS Code.
-2. Use the **Fetch Test Cases** command to retrieve the test cases from a LeetCode problem URL.
-3. Write your solution in the editor, following the standard input and output format. For container structures (e.g., arrays), the input will include the size of the array followed by its elements (this applies to multi-dimensional or jagged arrays as well).
-4. Use the **Run Test Cases** command to execute your solution and check the results.
+---
 
-## Installation
+### How to Use  
 
-1. Clone this repository.
-2. Open the cloned repository in VS Code.
-3. Run `npm install` to install the required dependencies.
-4. Press **F5** to launch the extension in a new VS Code window for testing.
+1. Open your project workspace in Visual Studio Code.  
+2. Run the **Fetch Test Cases** command and provide the URL of a LeetCode problem.  
+3. Write your solution in the code editor. Ensure your program handles inputs using standard input/output. For data structures like arrays, the input format includes the size of the array followed by its elements. This pattern applies to multi-dimensional and jagged arrays as well.  
+4. Use the **Run Test Cases** command to test your program.  
 
-## Dependencies
+---
 
-- **Puppeteer**: For web scraping LeetCode pages.
-- **Child Process**: For executing code commands.
-- **Node.js File System**: For handling file operations.
+## Installation  
+
+1. Clone this repository to your local machine.  
+2. Open the folder in Visual Studio Code.  
+3. Run `npm install` in the terminal to install required dependencies.  
+4. Press **F5** to launch the extension in a new VS Code window for testing.  
+
+---
+
+## Dependencies  
+
+- **Puppeteer**: Used for web scraping to fetch problem details and test cases.  
+- **Child Process**: Executes code directly from the terminal.  
+- **Node.js File System**: Manages file creation and storage for test cases.  
+
+---
 
 ## Following extension guidelines
 
