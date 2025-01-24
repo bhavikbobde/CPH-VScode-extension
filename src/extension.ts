@@ -146,7 +146,7 @@ export function activate(context: vscode.ExtensionContext) {
 
         if (url) {
             vscode.window.showInformationMessage('Fetching test cases....');
-            // Clear existing testcases folder
+           
             if (fs.existsSync(testcasesDir)) {
                 fs.rmSync(testcasesDir, { recursive: true, force: true });
             }
