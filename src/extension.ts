@@ -103,7 +103,7 @@ for (let i = 0; i < inputStr.length; i++) {
             formattedAnswer += os.platform() === 'win32' ? '\r\n' : '\n';
 
             fs.writeFileSync(`${testcasesDir}/input_${index + 1}.txt`, formattedInput);
-            fs.writeFileSync(`${testcasesDir}/answer_${index + 1}.txt`, formattedAnswer);
+            fs.writeFileSync(`${testcasesDir}/correct_${index + 1}.txt`, formattedAnswer);
         });
     } catch (error) {
         vscode.window.showErrorMessage(`Error while scraping LeetCode problem: ${error}`);
@@ -113,7 +113,7 @@ for (let i = 0; i < inputStr.length; i++) {
 async function showTestResults() {
     const resultsMap = new Map<number, boolean>();
     fs.readdirSync(testcasesDir).forEach((file) => {
-        if (file.startsWith('answer_') && file.endsWith('.txt')) {
+        if (file.startsWith('correct_') && file.endsWith('.txt')) {
             const answerFilePath = path.join(testcasesDir, file);
             const testCaseNumber = parseInt(file.split('_')[1].split('.')[0]);
             const outputFilePath = path.join(testcasesDir, `output_${testCaseNumber}.txt`);
